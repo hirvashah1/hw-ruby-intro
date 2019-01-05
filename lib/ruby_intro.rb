@@ -14,12 +14,12 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
-  hash = Hash.new(0)
+  h = Hash.new(0)
   arr.each do |val|
-    if hash.key? val
+    if h.key? val
       return true
     else
-      hash[n-val] = val
+      h[n-val] = val
     end
   end
   return false
